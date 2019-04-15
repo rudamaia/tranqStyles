@@ -1,6 +1,6 @@
-.tranq-chatBase {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.5s;
-  border: none;
+* {
+  background: transparent !important;
+}
+yt-live-chat-viewer-engagement-message-renderer {
+  display: none !important;
 }
