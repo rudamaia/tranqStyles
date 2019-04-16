@@ -5,6 +5,7 @@ var html5player = ""
 //_gDysWhXtwQ
 //sP6SaKn2WuM"
 iframe.src = "https://www.youtube.com/live_chat?v=_gDysWhXtwQ";
+iframe.style.border = 0;
 iframe.setAttribute("allowTransparency", "true");
 iframe.setAttribute("id", "chat-iframe");
 player[0].appendChild(iframe);
@@ -26,7 +27,6 @@ function loadedIframe() {
     addSheet(cssChat, true);
     addSheet(cssPlayer, false);
     html5player = document.getElementsByClassName('html5-video-player')[0];
-    show();
 
   }
 }
