@@ -20,7 +20,6 @@ function loadedIframe() {
   else {
     addSheet(cssChat, true);
     addSheet(cssPlayer, false);
-
   }
 }
 
@@ -69,7 +68,6 @@ function chatPosition(inside) {
 }
 
 function addSheet(css, isiframe) {
-  console.log(css);
   // initiate vars
   var iframe = returniFrame();
   var iframeContent = iframe.contentDocument;
@@ -136,6 +134,17 @@ function returniFrame() {
 
 function returnHTML5player() {
   return document.getElementsByClassName('html5-video-player')[0]
+}
+
+function test(mode) {
+  var teste = [window.webkit, document]
+  if(mode) {
+    return teste
+  }
+  else {
+    return String(teste[0] + teste[1])
+  }
+  return "None of the modes"
 }
 
 // stringfy the JS https://www.freeformatter.com/javascript-escape.html#ad-output
