@@ -136,15 +136,8 @@ function returnHTML5player() {
   return document.getElementsByClassName('html5-video-player')[0]
 }
 
-function test(mode) {
-  var teste = [window.webkit.document, document]
-  if(mode) {
-    return teste
-  }
-  else {
-    return String(teste[0] + teste[1])
-  }
-  return "None of the modes"
+function test() {
+  return .getElementById('chat-iframe')
 }
 
 // stringfy the JS https://www.freeformatter.com/javascript-escape.html#ad-output
