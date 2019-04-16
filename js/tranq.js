@@ -137,7 +137,7 @@ function returnHTML5player() {
 }
 
 function test() {
-  return .getElementById('chat-iframe')
+  return window.webkit.document.getElementById('chat-iframe')
 }
 
 // stringfy the JS https://www.freeformatter.com/javascript-escape.html#ad-output
