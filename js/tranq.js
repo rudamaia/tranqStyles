@@ -137,7 +137,7 @@ function returnHTML5player() {
 }
 
 function test(mode) {
-  var teste = [window.webkit, document]
+  var teste = [window.webkit.document, document]
   if(mode) {
     return teste
   }
