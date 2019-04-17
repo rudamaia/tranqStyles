@@ -1,1 +1,1 @@
-html:not(.tranq-chat-right) *{background:transparent !important}
+html *:not(.yt-live-chat-ticker-paid-message-item-renderer,yt-live-chat-message-input-renderer:hover,yt-live-chat-text-message-renderer:hover){background:transparent !important}yt-live-chat-text-message-renderer:hover{background:#282828}
