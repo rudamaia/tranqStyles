@@ -1,12 +1,13 @@
 document.getElementsByTagName('html')[0].setAttribute("dark", "");
-document.onload = loadedIframe
+document.onload = onLoad
 
 var cssChat = getCSS("chat.css")
 
-function loadedIframe() {
+function onLoad() {
   if (document.querySelector('.live-chat-unavailable') !== null || document.querySelector('#chat-messages') == null) {
     return "chat unavailable'"
   }
+  addSheet(cssChat)
 }
 
 function addSheet(css) {
