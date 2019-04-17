@@ -1,4 +1,4 @@
-document.getElementsByTagName('html')[0].setAttribute("dark", "");
+
 document.onload = onLoad
 
 function onLoad() {
