@@ -1,5 +1,6 @@
 document.getElementsByTagName('html')[0].setAttribute("dark", "");
-document.getElementsByTagName('yt-live-chat-viewer-engagement-message-renderer')[0].remove()
+setTimeout(function(){ document.getElementsByTagName('yt-live-chat-viewer-engagement-message-renderer')[0].remove(); }, 2000);
+
 
 var cssChat = getCSS("fullscreen.css")
 addSheet(cssChat)
