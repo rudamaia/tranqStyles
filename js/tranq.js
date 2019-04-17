@@ -136,8 +136,18 @@ function returnHTML5player() {
   return document.getElementsByClassName('html5-video-player')[0]
 }
 
-function test() {
-  return window.webkit.document.getElementById('chat-iframe')
+function test(mode) {
+  switch (mode) {
+    case 1:
+      return window.webkit.getElementById('chat-iframe')
+      break;
+    case 2:
+      return document.getElementById('chat-iframe')
+      break;
+    case 3:
+      return window.document.getElementById('chat-iframe')
+      break;
+  }
 }
 
 // stringfy the JS https://www.freeformatter.com/javascript-escape.html#ad-output
