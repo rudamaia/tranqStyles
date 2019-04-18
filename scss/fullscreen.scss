@@ -4,3 +4,12 @@ html *:not(.yt-live-chat-ticker-paid-message-item-renderer, yt-live-chat-message
 yt-live-chat-text-message-renderer:hover {
   background: #282828;
 }
+[dark] yt-live-chat-app {
+  &::-webkit-scrollbar-thumb {
+    background-color:rgba(0,0,0,0.7);
+    border: none;
+  }
+  &::-webkit-scrollbar-track{
+    background-color:transparent;
+  }
+}
