@@ -5,11 +5,11 @@ yt-live-chat-text-message-renderer:hover {
   background: #282828;
 }
 [dark] yt-live-chat-app {
-  &::-webkit-scrollbar-thumb {
-    background-color:rgba(0,0,0,0.7);
-    border: none;
+  ::-webkit-scrollbar-thumb {
+    background-color:rgba(0,0,0,0.7) !important;
+    border: none !important;
   }
-  &::-webkit-scrollbar-track{
-    background-color:transparent;
+  ::-webkit-scrollbar-track{
+    background-color:transparent !important;
   }
 }
