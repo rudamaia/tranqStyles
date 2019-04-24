@@ -1,5 +1,3 @@
-document.getElementsByTagName('html')[0].setAttribute("dark", "");
-
 var cssChat = getCSS("ytpages.css")
 addSheet(cssChat)
 
