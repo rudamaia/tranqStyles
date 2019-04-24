@@ -1,3 +1,6 @@
-*:not(html, body, ytd-app, #content, #page-manager, #page-manager *) {
-  display: none !important;
+*:not(html,body,ytd-app,#content, #page-manager *){display:none !important}
+
+#page-manager {
+    display: block !important;
+    margin: 0;
 }
