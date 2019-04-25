@@ -16,3 +16,11 @@ ytm-compact-video-renderer {
     background: #404040;
   }
 }
+.scbrr-tabs {
+  background-color: #222;
+  a {
+    &[aria-selected="true"] {
+      font-weight: bold;
+    }
+  }
+}
