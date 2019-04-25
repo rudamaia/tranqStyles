@@ -1,1 +1,1 @@
-ytm-header-bar{display:none !important}*{background:#2a2a2a !important;color:#eee}#app{padding-top:0}ytm-item-section-renderer:hover{background:#404040}
+ytm-header-bar{display:none !important}*{background:#2a2a2a !important;color:#eee}#app{padding-top:0}ytm-compact-video-renderer:nth-child(even){background:#2b2b2b}ytm-compact-video-renderer:hover{background:#404040}

@@ -8,6 +8,11 @@ ytm-header-bar {
 #app {
   padding-top: 0
 }
-ytm-item-section-renderer:hover {
-  background: #404040;
+ytm-compact-video-renderer {
+  &:nth-child(even) {
+    background: #2b2b2b;
+  }
+  &:hover {
+    background: #404040;
+  }
 }
