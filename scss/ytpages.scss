@@ -40,4 +40,11 @@ ytm-item-section-renderer {
       background: #404040;
     }
   }
+  ::after {
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 9999;
+    background: red;
+  }
 }
