@@ -30,6 +30,7 @@ ytm-compact-video-renderer {
 }
 ytm-item-section-renderer {
   border: 0 !important;
+  cursor: pointer !important;
   ytm-video-with-context-renderer {
     margin: 0;
     padding: 6px 0;
@@ -40,4 +41,7 @@ ytm-item-section-renderer {
       background: #404040;
     }
   }
+}
+ytm-large-media-item {
+  pointer-events: none;
 }
