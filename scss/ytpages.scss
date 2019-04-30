@@ -40,7 +40,7 @@ ytm-item-section-renderer {
       background: #404040;
     }
   }
-  ::after {
+  &::after {
     content: "";
     display: block;
     position: relative;
