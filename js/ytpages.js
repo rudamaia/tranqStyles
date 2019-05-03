@@ -24,13 +24,18 @@ function getCSS(css) {
 // Click functions
 function clickOverrider() {
   var videoLink = document.querySelectorAll(".large-media-item-metadata");
+  videoLink !== null ? videoLink = videoLink : videoLink = document.querySelectorAll(".large-media-item-metadata")
+
+  var parenter = document.querySelectorAll("ytm-compact-video-renderer")
+  parenter !== null ? parenter = parenter : parenter = document.querySelectorAll(".large-media-item-metadata")
   for (var i = 0; i < videoLink.length; i++) {
-      videoLink[i].closest("ytm-item-section-renderer").addEventListener('click', clickOverride, false);
+    videoLink[i].closest(parenter).addEventListener('click', clickOverride, false);
   }
 }
 
 function clickOverride(e) {
   var target = e.target.querySelectorAll(".large-media-item-metadata");
+  target !== null ? target = target : target = e.target.querySelectorAll(".compact-media-item-metadata-content")
   var href = target[0].getAttribute("href");
   copyStringToClipboard(href);
 }
