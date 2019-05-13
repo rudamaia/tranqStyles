@@ -27,20 +27,23 @@ function clickOverrider() {
   var videoLinkSubscription = document.querySelectorAll(".large-media-item-metadata")
   var videoLinkHistory = document.querySelectorAll(".compact-media-item-metadata-content")
   var videoLink = videoLinkSubscription.length > 0 ? videoLinkSubscription : videoLinkHistory
+  // console.log(videoLink)
   // Video parent element
   var parenterSubscription = document.querySelectorAll("ytm-item-section-renderer")
   var parenter = parenterSubscription.length > 0 ? "ytm-item-section-renderer" : "ytm-compact-video-renderer"
-
+  // console.log(parenter)
   // Iterate trought itens to apply click event
   for (var i = 0; i < videoLink.length; i++) {
+    // console.log(parenter);
     videoLink[i].closest(parenter).addEventListener('click', clickOverride, false)
+    // console.log(videoLink[i].closest(parenter))
   }
 }
 
 function clickOverride(e) {
   var targetSubscription = e.target.querySelectorAll(".large-media-item-metadata")
-  var targetSubscription = e.target.querySelectorAll(".compact-media-item-metadata-content")
-  var target = targetSubscription.length > 0 ? targetSubscription : targetSubscription
+  var targetHistory = e.target.querySelectorAll(".compact-media-item-metadata-content")
+  var target = targetSubscription.length > 0 ? targetSubscription : targetHistory
   var href = target[0].getAttribute("href")
   copyStringToClipboard(href)
 }
@@ -61,6 +64,7 @@ function copyStringToClipboard (str) {
    document.execCommand('copy')
    // Remove temporary element
    document.body.removeChild(el)
+   console.log(str)
 }
 
 // Ajax for video paging
