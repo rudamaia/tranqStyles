@@ -27,16 +27,12 @@ function clickOverrider() {
   var videoLinkSubscription = document.querySelectorAll(".large-media-item-metadata")
   var videoLinkHistory = document.querySelectorAll(".compact-media-item-metadata-content")
   var videoLink = videoLinkSubscription.length > 0 ? videoLinkSubscription : videoLinkHistory
-  // console.log(videoLink)
   // Video parent element
   var parenterSubscription = document.querySelectorAll("ytm-item-section-renderer")
   var parenter = parenterSubscription.length > 0 ? "ytm-item-section-renderer" : "ytm-compact-video-renderer"
-  // console.log(parenter)
   // Iterate trought itens to apply click event
   for (var i = 0; i < videoLink.length; i++) {
-    // console.log(parenter);
     videoLink[i].closest(parenter).addEventListener('click', clickOverride, false)
-    // console.log(videoLink[i].closest(parenter))
   }
 }
 
